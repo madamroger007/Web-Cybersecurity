@@ -2,7 +2,7 @@ import app
 
 def main_page(st, Image):
     st.sidebar.markdown("# Halaman Utama ")
-    image = Image.open('src/image/cyberattack.png')
+    image = Image.open('image/cyberattack.png')
     st.title('Cyber Security')
     st.title('\n\n')
     st.image(image, output_format="PNG")
@@ -13,7 +13,7 @@ def main_page(st, Image):
     Penelitian keamanan baru-baru ini menunjukkan bahwa sebagian besar perusahaan memiliki keamanan siber yang buruk, yang membuat mereka rentan terhadap kehilangan data. Adalah sangat penting bagi perusahaan untuk meningkatkan kesadaran mengenai keamanan siber, pencegahan, dan praktik terbaik keamanan, sehingga menjadi bagian dari budaya mereka.
     ''')
    
-    video_file = open('src/image/Cybersecurity.mp4', 'rb')
+    video_file = open('image/Cybersecurity.mp4', 'rb')
     video_bytes = video_file.read()
     st.video(video_bytes)
     app.footercapt(st)
